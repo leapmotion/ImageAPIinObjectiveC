@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015FEFC91682E49B00DEEFA0 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 015FEFC81682E49B00DEEFA0 /* LeapObjectiveC.mm */; };
-		015FEFCB1682E4DF00DEEFA0 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 015FEFCA1682E4DF00DEEFA0 /* libLeap.dylib */; };
 		731CC9B619CA26190080FC52 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731CC9B519CA26190080FC52 /* OpenGL.framework */; };
 		731CC9B919CA26A90080FC52 /* UndistortedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CC9B819CA26A90080FC52 /* UndistortedImageView.m */; };
 		731CC9BD19CCE2CE0080FC52 /* vertexImage.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 731CC9BC19CCE2CE0080FC52 /* vertexImage.vsh */; };
@@ -21,7 +19,9 @@
 		7328E06B19DB588C00DFB9C0 /* geometryTips.gsh in Resources */ = {isa = PBXBuildFile; fileRef = 7328E06A19DB588C00DFB9C0 /* geometryTips.gsh */; };
 		7328E06D19DB58B700DFB9C0 /* fragmentTips.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 7328E06C19DB58B700DFB9C0 /* fragmentTips.fsh */; };
 		73310EA419D4F47100752395 /* OpenGLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 73310EA319D4F47100752395 /* OpenGLUtil.m */; };
-		73BF4B1316F7B3DE00DE8B54 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 015FEFCA1682E4DF00DEEFA0 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		737090591A2FE7E00038CBDE /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 737090581A2FE7E00038CBDE /* LeapObjectiveC.mm */; };
+		7370905B1A2FE7F70038CBDE /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7370905A1A2FE7F70038CBDE /* libLeap.dylib */; };
+		7370905C1A2FE8360038CBDE /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7370905A1A2FE7F70038CBDE /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		73BFC6BA19DCAF56002DF168 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BFC6B919DCAF56002DF168 /* Images.xcassets */; };
 		B599FCC81656F5020092AFFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B599FCC71656F5020092AFFD /* Cocoa.framework */; };
 		B599FCD21656F5020092AFFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B599FCD01656F5020092AFFD /* InfoPlist.strings */; };
@@ -37,18 +37,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				73BF4B1316F7B3DE00DE8B54 /* libLeap.dylib in CopyFiles */,
+				7370905C1A2FE8360038CBDE /* libLeap.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		015FEFBD1682E45E00DEEFA0 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = ../../include/Leap.h; sourceTree = "<group>"; };
-		015FEFBE1682E46900DEEFA0 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = ../../include/LeapMath.h; sourceTree = "<group>"; };
-		015FEFBF1682E47300DEEFA0 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = ../../include/LeapObjectiveC.h; sourceTree = "<group>"; };
-		015FEFC81682E49B00DEEFA0 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = ../../include/LeapObjectiveC.mm; sourceTree = "<group>"; };
-		015FEFCA1682E4DF00DEEFA0 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../lib/libLeap.dylib; sourceTree = "<group>"; };
 		731CC9B519CA26190080FC52 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		731CC9B719CA26A90080FC52 /* UndistortedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndistortedImageView.h; sourceTree = "<group>"; };
 		731CC9B819CA26A90080FC52 /* UndistortedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndistortedImageView.m; sourceTree = "<group>"; };
@@ -66,6 +61,11 @@
 		7328E06C19DB58B700DFB9C0 /* fragmentTips.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentTips.fsh; sourceTree = "<group>"; };
 		73310EA219D4F47100752395 /* OpenGLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLUtil.h; sourceTree = "<group>"; };
 		73310EA319D4F47100752395 /* OpenGLUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLUtil.m; sourceTree = "<group>"; };
+		737090551A2FE7E00038CBDE /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = ../../LeapSDK/include/Leap.h; sourceTree = "<group>"; };
+		737090561A2FE7E00038CBDE /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = ../../LeapSDK/include/LeapMath.h; sourceTree = "<group>"; };
+		737090571A2FE7E00038CBDE /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = ../../LeapSDK/include/LeapObjectiveC.h; sourceTree = "<group>"; };
+		737090581A2FE7E00038CBDE /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = ../../LeapSDK/include/LeapObjectiveC.mm; sourceTree = "<group>"; };
+		7370905A1A2FE7F70038CBDE /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../LeapSDK/lib/libLeap.dylib; sourceTree = "<group>"; };
 		73BFC6B919DCAF56002DF168 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B599FCC31656F5020092AFFD /* ImageAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B599FCC71656F5020092AFFD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -86,10 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7370905B1A2FE7F70038CBDE /* libLeap.dylib in Frameworks */,
 				7328E03819D5FDB300DFB9C0 /* Quartz.framework in Frameworks */,
 				731CC9B619CA26190080FC52 /* OpenGL.framework in Frameworks */,
 				B599FCC81656F5020092AFFD /* Cocoa.framework in Frameworks */,
-				015FEFCB1682E4DF00DEEFA0 /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 		B599FCC61656F5020092AFFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				015FEFCA1682E4DF00DEEFA0 /* libLeap.dylib */,
+				7370905A1A2FE7F70038CBDE /* libLeap.dylib */,
 				7328E03719D5FDB300DFB9C0 /* Quartz.framework */,
 				731CC9B519CA26190080FC52 /* OpenGL.framework */,
 				B599FCC71656F5020092AFFD /* Cocoa.framework */,
@@ -178,10 +178,10 @@
 		B599FCEA1656F7290092AFFD /* Leap Files */ = {
 			isa = PBXGroup;
 			children = (
-				015FEFC81682E49B00DEEFA0 /* LeapObjectiveC.mm */,
-				015FEFBF1682E47300DEEFA0 /* LeapObjectiveC.h */,
-				015FEFBE1682E46900DEEFA0 /* LeapMath.h */,
-				015FEFBD1682E45E00DEEFA0 /* Leap.h */,
+				737090551A2FE7E00038CBDE /* Leap.h */,
+				737090561A2FE7E00038CBDE /* LeapMath.h */,
+				737090571A2FE7E00038CBDE /* LeapObjectiveC.h */,
+				737090581A2FE7E00038CBDE /* LeapObjectiveC.mm */,
 			);
 			name = "Leap Files";
 			sourceTree = "<group>";
@@ -257,12 +257,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B599FCD41656F5020092AFFD /* main.m in Sources */,
+				737090591A2FE7E00038CBDE /* LeapObjectiveC.mm in Sources */,
 				731CC9B919CA26A90080FC52 /* UndistortedImageView.m in Sources */,
 				B599FCDB1656F5020092AFFD /* AppDelegate.m in Sources */,
 				7328E03B19D63EEB00DFB9C0 /* RawImageView.m in Sources */,
 				73310EA419D4F47100752395 /* OpenGLUtil.m in Sources */,
 				7328E04419DA094700DFB9C0 /* RawImageWithTips.m in Sources */,
-				015FEFC91682E49B00DEEFA0 /* LeapObjectiveC.mm in Sources */,
 				7328E05F19DA3FCA00DFB9C0 /* UndistortedImageViewWithTips.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,9 +354,10 @@
 				INFOPLIST_FILE = "src/Sample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/src\"",
 					"\"$(SRCROOT)/../lib\"",
+					/Volumes/LEAP/Examples/ImageAPI/LeapSDK/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,9 +376,10 @@
 				INFOPLIST_FILE = "src/Sample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/src\"",
 					"\"$(SRCROOT)/../lib\"",
+					/Volumes/LEAP/Examples/ImageAPI/LeapSDK/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
